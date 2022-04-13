@@ -1,16 +1,17 @@
+"use strict";
 // explicit types
-var character;
-var age;
-var isLoggedIn;
+let character;
+let age;
+let isLoggedIn;
 // Type 'string' is not assignable to type 'number'.
 // age = 'ale';
 age = 21;
 isLoggedIn = true;
 // array
-var ninja = [];
+let ninja = [];
 // ninja = ['ali', 'Benyamin'];
 ninja.push('alc');
-var mixed = [];
+let mixed = [];
 mixed.push(20);
 mixed.push('milad');
 // we cat define boolean because I do not declear this
@@ -19,17 +20,17 @@ mixed.push('milad');
 console.log(mixed);
 // objects
 // in this way student cat be array because array is kind of objects
-var student;
+let student;
 // so we define object variable like this
-var teachers;
+let teachers;
 // any type
 // this type can be chage to other types
-var gender;
+let gender;
 gender = "male";
 console.log(gender);
 gender = 1;
 console.log(gender);
-var mixedOfAnyArray = [];
+let mixedOfAnyArray = [];
 mixedOfAnyArray.push('ale');
 mixedOfAnyArray.push(25);
 mixedOfAnyArray.push(true);
