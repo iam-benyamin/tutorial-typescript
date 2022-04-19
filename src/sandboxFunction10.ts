@@ -1,3 +1,4 @@
+// init config man is https://www.typescriptlang.org/tsconfig
 console.log(`test for tsc --init`);
 
 // functions
@@ -9,8 +10,8 @@ greet = () => {
 }
 
 const add = (a: number, b: number, c?: number | string, d: number = 5): number => {
-    // each function has return type 
-    // if function don't have return then return type is void 
+    // each function has return type
+    // if function don't have return then return type is void
     // void id diffrent with undefind
     console.log(a + b);
     console.log(c); // c is optional
@@ -46,4 +47,4 @@ const grootAgain = (user: ObjWithName) => {
 }
 
 // function signiture
-let def: (a: string, b: number) => void; 
+let def: (a: string, b: number) => void;
