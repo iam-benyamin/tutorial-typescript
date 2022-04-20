@@ -1,3 +1,12 @@
+import { Invoice } from "./classes/invoice.js";
+import { Payment } from "./classes/Payment.js";
+let docOne;
+let docTwo;
+docOne = new Invoice('youshi', 'web work', 250);
+docTwo = new Payment('mario', 'plumbing work', 300);
+let docs = [];
+docs.push(docOne);
+docs.push(docTwo);
 const me = {
     name: "Benyamin",
     age: 30,
@@ -10,7 +19,6 @@ const me = {
     }
 };
 console.log(me);
-import { Invoice } from "./classes/invoice.js";
 const invOne = new Invoice("Sara", "work", 400);
 const invTwo = new Invoice("Benyamin", "shool", 100);
 // only Invoice can add to this array
