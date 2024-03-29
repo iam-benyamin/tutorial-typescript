@@ -1,0 +1,54 @@
+# Smart Contract Name: MyToken
+
+## Description:
+This smart contract implements a basic ERC20 token named MyToken. It includes functionalities such as transferring tokens, checking balances, and approving token transfers.
+
+## Specifications:
+- **Total Supply:** 1,000,000 tokens
+- **Decimals:** 18
+- **Symbol:** MYT
+
+## Functions:
+
+### `balanceOf(address _owner) public view returns (uint256 balance)`
+- **Description:** Retrieves the token balance of a given address.
+- **Parameters:**
+  - `_owner`: The address whose balance will be retrieved.
+- **Returns:** The token balance of the given address.
+
+### `transfer(address _to, uint256 _value) public returns (bool success)`
+- **Description:** Transfers tokens from the sender's address to the specified recipient.
+- **Parameters:**
+  - `_to`: The address to which tokens will be transferred.
+  - `_value`: The amount of tokens to be transferred.
+- **Returns:** A boolean indicating whether the transfer was successful or not.
+
+### `approve(address _spender, uint256 _value) public returns (bool success)`
+- **Description:** Allows a spender to withdraw tokens from the sender's account multiple times, up to the approved amount.
+- **Parameters:**
+  - `_spender`: The address allowed to withdraw the tokens.
+  - `_value`: The maximum amount of tokens the spender is allowed to withdraw.
+- **Returns:** A boolean indicating whether the approval was successful or not.
+
+### `transferFrom(address _from, address _to, uint256 _value) public returns (bool success)`
+- **Description:** Transfers tokens from a specified address to another address, on behalf of a spender.
+- **Parameters:**
+  - `_from`: The address from which tokens will be transferred.
+  - `_to`: The address to which tokens will be transferred.
+  - `_value`: The amount of tokens to be transferred.
+- **Returns:** A boolean indicating whether the transfer was successful or not.
+
+## Installation:
+- Clone the repository:
+
+
+## Usage:
+1. Deploy the smart contract to an Ethereum-compatible blockchain.
+2. Interact with the contract using an Ethereum wallet or by invoking the functions programmatically.
+
+## Contributors:
+- John Doe <johndoe@example.com>
+- Jane Smith <janesmith@example.com>
+
+## License:
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
